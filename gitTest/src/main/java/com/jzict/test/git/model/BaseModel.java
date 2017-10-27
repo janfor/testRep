@@ -9,7 +9,15 @@ import java.io.Serializable;
 */
 public class BaseModel implements Serializable{
 
+	/**唯一标识**/
 	private String id;
+	
+	public BaseModel() {
+	}
+
+	public BaseModel(String id) {
+		this.id = id;
+	}
 
 	public String getId() {
 		return id;
